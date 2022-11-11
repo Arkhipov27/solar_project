@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fc9f6462-6b15-48a7-9578-2b178da1c1c5" name="Changes" comment="исправлены все функции">
       <change beforePath="$PROJECT_DIR$/solar_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_input.py" afterDir="false" />
+=======
+    <list default="true" id="7a19fda9-10f0-4b48-87c5-8e817b529e2f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/solar_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_model.py" afterDir="false" />
+>>>>>>> a86e5b2dc7a9bf0e9abb2dcbf8d4e11fd2c6b5de
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +20,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="2HOoelEs0Yb6mdWqtdQkV93gnWf" />
+=======
+  <component name="ProjectId" id="2HOpSTuYLr3GvHyijHYWPAsHpqU" />
+>>>>>>> a86e5b2dc7a9bf0e9abb2dcbf8d4e11fd2c6b5de
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,6 +33,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/Admin/infa_2022_salangin"
   }
 }]]></component>
@@ -70,6 +80,26 @@
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1668165656734</updated>
+=======
+    "last_opened_file_path": "C:/Users/антон/PycharmProjects/infa_2022_arkhipov/solar_project"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a19fda9-10f0-4b48-87c5-8e817b529e2f" name="Changes" comment="" />
+      <created>1668165983725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668165983725</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Исправлены функции">
+      <created>1668166953078</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668166953078</updated>
+>>>>>>> a86e5b2dc7a9bf0e9abb2dcbf8d4e11fd2c6b5de
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -86,8 +116,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="привет" />
     <MESSAGE value="исправлены все функции" />
     <option name="LAST_COMMIT_MESSAGE" value="исправлены все функции" />
+=======
+    <MESSAGE value="Исправлены функции" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлены функции" />
+>>>>>>> a86e5b2dc7a9bf0e9abb2dcbf8d4e11fd2c6b5de
   </component>
 </project>
