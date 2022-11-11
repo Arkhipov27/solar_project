@@ -19,7 +19,7 @@ def read_space_objects_data_from_file(input_filename):
             if len(line.strip()) == 0 or line[0] == '#':
                 continue  # пустые строки и строки-комментарии пропускаем
             object_type = line.split()[0].lower()
-            if object_type == "star":  # FIXME: do the same for planet(+)
+            if object_type == "star":
                 star = Star()
                 parse_star_parameters(line, star)
                 objects.append(star)
@@ -45,12 +45,12 @@ def parse_star_parameters(line, star):
     **line** — строка с описание звезды.
     **star** — объект звезды.
     """
+
     star.type = line.split()[0]
     star.r = int(line.split()[1])
     star.color = line.split()[2]
     star.m, star.x, star.y, star.Vx, star.Vy = line.split()[3:8]
-     # FIXME: not done yet(+)
-
+    
 def parse_planet_parameters(line, planet):
     """Считывает данные о планете из строки.
     Предполагается такая строка:
@@ -67,7 +67,6 @@ def parse_planet_parameters(line, planet):
     **planet** — объект планеты.
     """
     planet.type, planet.r, planet.color, planet.m, planet.x, planet.y, planet.Vx, planet.Vy = line.split()
-      # FIXME: not done yet...(+)
 
 
 def write_space_objects_data_to_file(output_filename, space_objects):
@@ -84,7 +83,6 @@ def write_space_objects_data_to_file(output_filename, space_objects):
     with open(output_filename, 'w') as out_file:
         for obj in space_objects:
             out_file.write("{} {} {} {} {} {} {} {}".format(obj.type, obj.r, obj.color, obj.m, obj.x, obj.y, obj.Vx, obj.Vy))
-            # FIXME: should store real values(+)
 
 # FIXME: хорошо бы ещё сделать функцию, сохранающую статистику в заданный файл...
 
