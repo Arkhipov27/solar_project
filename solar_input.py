@@ -50,8 +50,7 @@ def parse_star_parameters(line, star):
     star.r = int(line.split()[1])
     star.color = line.split()[2]
     star.m, star.x, star.y, star.Vx, star.Vy = line.split()[3:8]
-
-
+    
 def parse_planet_parameters(line, planet):
     """Считывает данные о планете из строки.
     Предполагается такая строка:
@@ -86,7 +85,6 @@ def write_space_objects_data_to_file(output_filename, space_objects):
             out_file.write("{} {} {} {} {} {} {} {}".format(obj.type, obj.r, obj.color, obj.m, obj.x, obj.y, obj.Vx, obj.Vy))
 
 # FIXME: хорошо бы ещё сделать функцию, сохранающую статистику в заданный файл...
-
 
 if __name__ == "__main__":
     print("This module is not for direct call!")
