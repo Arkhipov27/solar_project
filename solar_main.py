@@ -1,12 +1,15 @@
 # coding: utf-8
 # license: GPLv3
-
+import matplotlib.pyplot as plt
 import tkinter
 from tkinter.filedialog import *
 from solar_vis import *
 from solar_model import *
 from solar_input import *
 
+f = open('statistics.txt', 'w')
+f.close()
+"""Обновляет файл каждый раз перед запуском"""
 perform_execution = False
 """Флаг цикличности выполнения расчёта"""
 
@@ -25,6 +28,8 @@ time_step = None
 space_objects = []
 """Список космических объектов."""
 
+count_for_graph = 0
+
 
 def execution():
     """Функция исполнения -- выполняется циклически, вызывая обработку всех небесных тел,
@@ -32,6 +37,7 @@ def execution():
     Цикличность выполнения зависит от значения глобальной переменной perform_execution.
     При perform_execution == True функция запрашивает вызов самой себя по таймеру через от 1 мс до 100 мс.
     """
+    global count_for_graph, t_arr, v_arr
     global physical_time
     global displayed_time
     recalculate_space_objects_positions(space_objects, time_step.get())
@@ -39,6 +45,14 @@ def execution():
         update_object_position(space, body)
     physical_time += time_step.get()
     displayed_time.set("%.1f" % physical_time + " seconds gone")
+
+    statistics(space_objects, physical_time)
+
+    if count_for_graph == 1000:
+        graph('statistics.txt')
+        count_for_graph = 0
+    else:
+        count_for_graph += 1
 
     if perform_execution:
         space.after(101 - int(time_speed.get()), execution)
@@ -147,6 +161,7 @@ def main():
 
     root.mainloop()
     print('Modelling finished!')
+
 
 if __name__ == "__main__":
     main()
